@@ -40,3 +40,8 @@ def is_age(age:int)->str :
     return "You are eligible" if(age>=18) else "Not Eligible"
 
 print(is_age(12))
+
+
+
+#string operation 
+

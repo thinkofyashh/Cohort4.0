@@ -15,7 +15,7 @@ def get_choices() :
 
     computer_choice="Scissors"
 
-    choices= {"player " : player_choice ,"computer": computer_choice}
+    choices:dict= {"player " : player_choice ,"computer": computer_choice}
 
     return choices
 

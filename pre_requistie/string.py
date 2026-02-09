@@ -40,3 +40,6 @@ print("Printing age 1")
 print(age1.isdecimal())
 age2=str(12)
 print(age2.isdecimal())
+
+
+

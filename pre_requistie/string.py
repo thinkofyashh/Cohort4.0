@@ -43,3 +43,9 @@ print(age2.isdecimal())
 
 
 
+#user Input 
+
+print("what is your age ?")
+age=input("Enter: ")
+print("Your age is " + age)
+

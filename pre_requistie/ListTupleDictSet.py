@@ -50,4 +50,79 @@ print(newColors)
 
 
 
+#dictionary 
+
+students={
+    "Name":"Yash",
+    "Branch":"CSE",
+    "age":"24"
+}
+
+#if you want to access the value stored in the key .
+print(students["Name"])
+
+#if you want to set certain key a default value or a safer way to extract value .
+students.get("Marks",0)
+print(students.get("Name"))
+print(students)
+
+#adding and updating the Dict
+print("After adding into the dictionary")
+students["Marks"]=27
+print(students)
+
+print("After updating the dictionary ")
+students["age"]=18
+
+print(students)
+
+#removing the key from the dictionary 
+
+del students["age"]
+students.pop("Marks")
+
+print(students)
+
+#students.clear()
+
+
+print(students)
+
+#dict with for loop
+
+for key in students:
+    print(key,students[key])
+
+
+print(students.values())
+print(students.keys())
+print(students.items())
+
+for key,value in students.items():
+    print(key,value)
+
+#chekcing if the key exists or not .
+
+if "Name" in students:
+    print("Key exists")
+
+#copying into the dictionary 
+
+new_info=students.copy()
+
+print(new_info)
+
+print("Copied dict")
+print(new_info)
+
+#merging of dict 
+
+dict1={"address":"7A"}
+dict2={"city":"New delhi"}
+
+result = dict1 | dict2
+
+print(result)
+
+
 

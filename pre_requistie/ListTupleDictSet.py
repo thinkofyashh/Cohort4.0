@@ -185,10 +185,18 @@ age=10
 def test():
     print(age)
 
+
 print(age)
 test()
 
+# nested function 
 
+def talk(phrase):
+    def say(word):
+        print(word)
 
+    words=phrase.split(" ")
+    for word in words:
+        say(word)
 
-
+talk("hello my name is Yash Rawat .")

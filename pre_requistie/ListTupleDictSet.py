@@ -125,4 +125,70 @@ result = dict1 | dict2
 print(result)
 
 
+#set  - it can store only the unique element .
+
+set1={"Roger","daniel","Luna"}
+
+set2={"Luna"}
+
+mod= set1-set2
+
+print(mod)
+
+res=set1 |set2
+print(res)
+
+result=set1 & set2
+print(result)
+
+#functions - lets talk about the function .
+
+
+def hello(name="My friends"):
+    print("Hello "+ name)
+
+
+hello("yash")
+hello()
+
+# if the object passed is immutable .
+
+def change(value):
+    value=32
+
+val=23
+change(val)
+print(val)
+
+#if the object passed is unmutable .
+
+def change1(value):
+    value["name"]="Chaudhary"
+
+value={"name":"Yash"}
+change1(value)
+print(value)
+
+# return function 
+
+def hello(name):
+    print("hello my name is "+ name)
+    return name,"beaue",8
+
+print(hello("yash"))
+
+
+# global variable 
+
+age=10
+
+def test():
+    print(age)
+
+print(age)
+test()
+
+
+
+
 

@@ -37,4 +37,17 @@ sorted_names=sorted(names,key=str.lower)
 print(sorted_names)
 
 
+#tuples - it cant be modified .
+
+colors:tuple=("Green","yellow","pink","Brown")
+
+newColors=sorted(colors,key=str.lower)
+
+colors1=colors+("Blue","White","black")
+print(colors1)
+
+print(newColors)
+
+
+
 

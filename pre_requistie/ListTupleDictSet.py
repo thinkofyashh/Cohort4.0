@@ -1,3 +1,5 @@
+import dog
+
 #list
 
 dogs:list=["German","Syberian Husky",1,"Lebra",True,7]
@@ -255,3 +257,33 @@ for item in range(14):
 
 for index,item in enumerate(items):
     print(index,item)    
+
+
+
+ #classes 
+
+
+class Dog:
+
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    
+    def bark(self):
+        print("Woof !")
+
+
+roger=Dog("German",12)
+print(roger)
+
+print(roger.name)
+print(roger.age)
+roger.bark()
+
+
+
+
+dog.bark()
+
+

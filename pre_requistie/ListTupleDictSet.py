@@ -1,4 +1,8 @@
 import dog
+from dog import bark
+#from lib import dogss
+from lib import dogsss
+from lib.dogsss import yo
 
 #list
 
@@ -285,5 +289,14 @@ roger.bark()
 
 
 dog.bark()
+
+
+bark()
+
+#dogss.barking()
+
+dogsss.yo()
+
+yo()
 
 

@@ -200,3 +200,58 @@ def talk(phrase):
         say(word)
 
 talk("hello my name is Yash Rawat .")
+
+
+#closures in the function 
+
+def outer():
+    count=0
+
+    def inner():
+        nonlocal count
+        count+=1
+        return count    
+    return inner
+
+fn=outer()
+print(fn())
+print(fn())
+print(fn())
+
+
+#objects 
+
+age =12
+
+print(age.real)
+print(age.imag)
+
+print(age.bit_length())
+print(id(age))
+
+
+#loops 
+
+
+i=0
+while i<5:
+    print(i)
+    i=i+1
+
+
+items:list=[1,2,3,4]
+
+print("for loop ")
+
+for item in items:
+    print(item)
+
+#for loop with the range function 
+print("for loop with the range function ")
+for item in range(14):
+    print(item)
+
+# if you want to print enumerateor (means with the index)
+
+for index,item in enumerate(items):
+    print(index,item)    

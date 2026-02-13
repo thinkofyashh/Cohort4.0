@@ -10,3 +10,5 @@ args=parser.parse_args()
 
 print(args.name)
 print(args.city)
+
+

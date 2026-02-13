@@ -300,3 +300,8 @@ dogsss.yo()
 yo()
 
 
+#lambda function 
+
+multiply=lambda a,b : a*b
+
+print(multiply(1,2))

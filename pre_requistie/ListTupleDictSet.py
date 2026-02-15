@@ -3,6 +3,7 @@ from dog import bark
 #from lib import dogss
 from lib import dogsss
 from lib.dogsss import yo
+from functools import reduce 
 
 #list
 
@@ -305,3 +306,49 @@ yo()
 multiply=lambda a,b : a*b
 
 print(multiply(1,2))
+
+#map -> when you want to run fn for every item in the list 
+
+numbers:list = [1,2,3]
+
+result=map(lambda a: a*2,numbers)
+
+print(list(result))
+
+#filter -> when you want to filter in the list based on certain condtion 
+
+result1=filter(lambda a : a%2==0,numbers)
+print(list(result1))
+
+#reduce 
+
+nums:list=[1,2,3,4]
+
+result=reduce(lambda x,y: x*y,nums)
+print(result)
+
+#resursion 
+print("recursion")
+def fact(n):
+    if(n==1):
+        return 1
+    
+    return n*fact(n-1)
+
+print(fact(4))
+
+
+#decorator 
+
+def my_decorator(func):
+    def wrapper():
+        print("before")
+        func()
+        print("after")
+    return wrapper()    
+
+def say_hello():
+    print("Hello There my Name is Yash Rawat")
+
+func=my_decorator(say_hello)   
+print(func)
